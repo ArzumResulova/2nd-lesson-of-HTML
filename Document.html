@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<ul>
+<li>Qelem</li>
+<li>Defter</li>
+<li>Kitab</li>
+</ul>
+<ol type="A">
+<li>Sud</li>
+<li>Qatiq</li>
+<li>Yumurta</li>
+</ol>
+
+<span>Arzum</span> 
+<span>Arzum</span> 
+<div>Arzum</div>
+<div>Arzum</div>
+
+
+<br><table border="7.5">
+
+<tr>
+<td>Name</td>
+<td>Surname</td>
+<td>Age</td>
+<td>Job</td>
+</tr>
+
+<tr>
+<td>Arzum</td>
+<td>Rasulova</td>
+<td>16</td>
+<td>Doesn't have</td>
+</tr>
+
+<tr>
+<td>Emil</td>
+<td>Agayev</td>
+<td>56</td>
+<td>Doctor</td>
+</tr>
+</table>
+
+
+<br><br><br><fieldset>
+<legend>Registration</legend>
+<form action="adres"><br>
+<label for="x">
+ Name: <input required placeholder="Name must be provided" >
+</label> 
+
+<br><LABel>
+Password: <input  required placeholder="Password must be provided">
+</LABel>
+
+<br><label for="">
+Mail: <input required placeholder="Email must be provided">
+</label>
+
+<br><label for="">
+Female<input type="radio">
+Male<input type="radio">
+</label>
+
+<br><label for="">
+<input type="color">
+</label>
+
+<br><label for="">
+ <input type="date" name="df" id="df">
+</label>
+
+<br><label for="">
+<input type="file">
+</label>
+
+<br><br><label for="">
+<input type="checkbox">
+If you agree with rules that have been put, tick 
+</label>
+
+<br><br><label for="">
+Add URL
+<input type="url"> 
+</label>
+
+<br><br><label for="">
+<input type="reset"><input type="submit">
+</label>
+
+</form>
+</fieldset>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>
